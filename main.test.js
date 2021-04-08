@@ -5,7 +5,7 @@ test("Insufficient params", () => {
     const main = spawn("node", ["main.js", "avg"]);
     const outputs = [];
     main.stdout.on("data", (output) => {
-        outpputs.push(output);
+        outputs.push(output);
     });
 
     main.stdout.on("end", () => {
